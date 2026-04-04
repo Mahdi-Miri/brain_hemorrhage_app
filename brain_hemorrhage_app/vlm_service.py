@@ -6,7 +6,7 @@ import base64
 # =========================
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "API_KEY"
 
 headers = {
     "Authorization": f"Bearer {GROQ_API_KEY}",
