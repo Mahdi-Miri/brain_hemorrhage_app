@@ -7,3 +7,4 @@ requests
 Pillow
 numpy
 huggingface_hub
+python-dotenv

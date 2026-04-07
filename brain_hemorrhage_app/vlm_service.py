@@ -1,12 +1,17 @@
 import requests
 import base64
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # =========================
 # GROQ INFERENCE API (Blazing Fast & Free)
 # =========================
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
-GROQ_API_KEY = "API_KEY"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 headers = {
     "Authorization": f"Bearer {GROQ_API_KEY}",
